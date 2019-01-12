@@ -3,11 +3,34 @@
 html {
 	font-family: Arial;
 	font-size: 13px;
+	text-align: center;
 }
 
-div {
-	height: 100%;
-	widtch: 100%;
+#content{
+	display: block;
+	justify-content: center;
+}
+
+.logoContainer{
+	width: 200px;
+	display: inline;
+	justify-content: center;
+}
+
+.logoContainer img{
+	justify-content: center;
+	max-width: 300px;
+	display: block;
+	justify-contend: center;
+}
+
+#searchBar{
+	border: 1 px solid;
+	box-shadow: -1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#searchBar:focus {
+	
 }
 
 #SearchButtons{
@@ -35,12 +58,9 @@ div {
 	box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-#searchBar{
-	border: 1 px solid;
-	box-shadow: -1px 1px rgba(0, 0, 0, 0.2)
-}
-
 #Language{
-	font-weight: 700;
+	font-weight: 400;
 	line-height: 28px;
+	justify-content: center;
+	display: block;
 }
