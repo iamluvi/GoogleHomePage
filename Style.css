@@ -3,18 +3,19 @@
 html {
 	font-family: Arial;
 	font-size: 13px;
-	text-align: center;
 }
 
 #content{
 	display: block;
 	justify-content: center;
+	text-align: center;
 }
 
 .logoContainer{
 	width: 200px;
 	display: inline;
 	justify-content: center;
+	text-align: center;
 }
 
 .logoContainer img{
@@ -25,7 +26,10 @@ html {
 }
 
 #searchBar{
-	border: 1 px solid;
+	border: 1px solid #222222;
+	border-radius: 2px;
+	width: 400px;
+	height: 30px;
 	box-shadow: -1px 1px rgba(0, 0, 0, 0.2);
 }
 
