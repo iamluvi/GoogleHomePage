@@ -5,36 +5,129 @@ html {
 	font-size: 13px;
 }
 
+header{
+	display: flex;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+}
+
+#headerLeft{
+	display: flex;
+	align-content: flex-start;
+	margin-right: auto;
+}
+
+#headerRight{
+	display: flex;
+	align-content: flex-end;
+	margin-left: auto;
+}
+
+header p {
+	margin: 10px;
+	display: inline;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.underlined:hover{
+	text-decoration-line: underline;
+}
+
+.apps{
+	display: inline;
+	align-content: center;
+}
+
+.apps img{
+	max-width: 15px;
+	margin: 9px 5px 0 5px;
+	vertical-align: middle;
+	opacity: 0.6;
+}
+
+.apps img:hover{
+	opacity: 1.0;
+}
+
+#register{
+	margin: auto 3px auto 10px;
+	background-color: #4285F4;
+	color: white;
+	padding: 7px 9px;
+	font-weight: 700;
+	border-radius: 2px;
+}
+
+#register:hover{
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+#register:active{
+	background-color: #2C76F2;
+	box-shadow: inset 0px 1px 0px 0px #000000;
+}
+
+body{
+	height: 100%;
+}
+
 #content{
 	display: block;
 	justify-content: center;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .logoContainer{
-	width: 200px;
-	display: inline;
-	justify-content: center;
-	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 28px;
+	margin-top: 150px;
+	
 }
 
 .logoContainer img{
-	justify-content: center;
 	max-width: 300px;
-	display: block;
-	justify-contend: center;
+}
+
+#bar{
+	border: 1px solid #D2D2D2;
+	display: inline;
+	border-radius: 3px;
+	max-width: 550px;
+	height: 40px;
+	padding: 15px;
+	margin-bottom: 28px;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 #searchBar{
-	border: 1px solid #222222;
-	border-radius: 2px;
-	width: 400px;
-	height: 30px;
-	box-shadow: -1px 1px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	line-height: 34px;
+	color: rgba(0, 0, 0, 0.87);
+	align-content: left;
+	width: 500px;
+	border: 0px solid black;
 }
 
-#searchBar:focus {
-	
+#searchBar:active{
+	font-size: 16px;
+	line-height: 34px;
+	color: rgba(0, 0, 0, 0.87);
+	align-content: left;
+	width: 500px;
+	border: 0px solid black;
+}
+
+#bar:hover {
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+#bar img{
+	max-height: 30px;
+	vertical-align: middle;
 }
 
 #SearchButtons{
@@ -44,6 +137,7 @@ html {
 	justify-content: center;
 	flex-wrap: wrap;
 	display: flex;
+	margin-top: 28px;
 }
 
 .Button{
@@ -52,6 +146,8 @@ html {
 	color: #525252;
 	padding: 5px 20px 5px 20px;
 	margin: 10px 10px 10px 10px;
+	border: 1px solid #F2F2F2;
+	border-radius: 2px;
 }
 
 .Button:hover{
@@ -62,9 +158,66 @@ html {
 	box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+.Button:active{
+	border-color: #4285F4;
+}
+
 #Language{
 	font-weight: 400;
 	line-height: 28px;
 	justify-content: center;
 	display: block;
+}
+
+footer{
+	background-color:#F2F2F2;
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+
+footer hr{
+	background-color: rgba(0, 0, 0, 0.54);
+	color: rgba(0, 0, 0, 0.54);
+	margin: 0px;
+	padding: 0px;
+}
+
+#ger{
+	color: rgba(0, 0, 0, 0.54);
+	font-size: 15px;
+	padding-left: 15px;
+}
+
+#footerDown{
+	
+	flex-wrap: wrap;
+	display: flex;
+	color: #5f6368;
+}
+
+#footerDown p{
+	line-height: 40px;
+	margin: auto 10px;
+}
+
+#footerLeft{
+	flex-wrap: wrap;
+	display: flex;
+	align-content: flex-start;
+	margin-right: auto;
+	padding-left: 5px;
+}
+
+#footerRight{
+	flex-wrap: wrap;
+	display: flex;
+	align-content: flex-end;
+	margin-left: auto;
+	padding-right: 15px;
+}
+
+footerDown{
+	display: inline;
 }
