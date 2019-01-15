@@ -18,12 +18,14 @@ header{
 	display: flex;
 	align-content: flex-start;
 	margin-right: auto;
+	margin-left: 10px;
 }
 
 #headerRight{
 	display: flex;
 	align-content: flex-end;
 	margin-left: auto;
+	margin-right: 10px;
 }
 
 header p {
